@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap");
+#collapse {
+  position: absolute;
+  z-index: 1;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -36,7 +41,7 @@
   --bs-info: #0dcaf0;
   --bs-warning: #707070;
   --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
+  --bs-light: white;
   --bs-dark: #212529;
   --bs-primary-rgb: 37, 56, 63;
   --bs-secondary-rgb: 14, 14, 14;
@@ -44,7 +49,7 @@
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 112, 112, 112;
   --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 248, 249, 250;
+  --bs-light-rgb: 255, 255, 255;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
@@ -1856,13 +1861,13 @@ progress {
 
 .table-light {
   --bs-table-color: #000;
-  --bs-table-bg: #f8f9fa;
-  --bs-table-border-color: #dfe0e1;
-  --bs-table-striped-bg: #ecedee;
+  --bs-table-bg: white;
+  --bs-table-border-color: #e6e6e6;
+  --bs-table-striped-bg: #f2f2f2;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #dfe0e1;
+  --bs-table-active-bg: #e6e6e6;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #e5e6e7;
+  --bs-table-hover-bg: #ececec;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -2904,19 +2909,19 @@ textarea.form-control-lg {
 
 .btn-light {
   --bs-btn-color: #000;
-  --bs-btn-bg: #f8f9fa;
-  --bs-btn-border-color: #f8f9fa;
+  --bs-btn-bg: white;
+  --bs-btn-border-color: white;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #d3d4d5;
-  --bs-btn-hover-border-color: #c6c7c8;
-  --bs-btn-focus-shadow-rgb: 211, 212, 213;
+  --bs-btn-hover-bg: #d9d9d9;
+  --bs-btn-hover-border-color: #cccccc;
+  --bs-btn-focus-shadow-rgb: 217, 217, 217;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #c6c7c8;
-  --bs-btn-active-border-color: #babbbc;
+  --bs-btn-active-bg: #cccccc;
+  --bs-btn-active-border-color: #bfbfbf;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #f8f9fa;
-  --bs-btn-disabled-border-color: #f8f9fa;
+  --bs-btn-disabled-bg: white;
+  --bs-btn-disabled-border-color: white;
 }
 
 .btn-dark {
@@ -3039,19 +3044,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-light {
-  --bs-btn-color: #f8f9fa;
-  --bs-btn-border-color: #f8f9fa;
+  --bs-btn-color: white;
+  --bs-btn-border-color: white;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #f8f9fa;
-  --bs-btn-hover-border-color: #f8f9fa;
-  --bs-btn-focus-shadow-rgb: 248, 249, 250;
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: white;
+  --bs-btn-focus-shadow-rgb: 255, 255, 255;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #f8f9fa;
-  --bs-btn-active-border-color: #f8f9fa;
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: white;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #f8f9fa;
+  --bs-btn-disabled-color: white;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #f8f9fa;
+  --bs-btn-disabled-border-color: white;
   --bs-gradient: none;
 }
 
@@ -4667,12 +4672,12 @@ textarea.form-control-lg {
 }
 
 .alert-light {
-  --bs-alert-color: #636464;
-  --bs-alert-bg: #fefefe;
-  --bs-alert-border-color: #fdfdfe;
+  --bs-alert-color: #666666;
+  --bs-alert-bg: white;
+  --bs-alert-border-color: white;
 }
 .alert-light .alert-link {
-  color: #4f5050;
+  color: #525252;
 }
 
 .alert-dark {
@@ -5062,17 +5067,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-light {
-  color: #636464;
-  background-color: #fefefe;
+  color: #666666;
+  background-color: white;
 }
 .list-group-item-light.list-group-item-action:hover, .list-group-item-light.list-group-item-action:focus {
-  color: #636464;
-  background-color: #e5e5e5;
+  color: #666666;
+  background-color: #e6e6e6;
 }
 .list-group-item-light.list-group-item-action.active {
   color: #fff;
-  background-color: #636464;
-  border-color: #636464;
+  background-color: #666666;
+  border-color: #666666;
 }
 
 .list-group-item-dark {
@@ -6644,7 +6649,7 @@ textarea.form-control-lg {
 
 .text-bg-light {
   color: #000 !important;
-  background-color: RGBA(248, 249, 250, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(255, 255, 255, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-dark {
@@ -6695,10 +6700,10 @@ textarea.form-control-lg {
 }
 
 .link-light {
-  color: #f8f9fa !important;
+  color: white !important;
 }
 .link-light:hover, .link-light:focus {
-  color: #f9fafb !important;
+  color: white !important;
 }
 
 .link-dark {
@@ -9895,7 +9900,7 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 62, 5%;
+  font-family: Amita, sans-serif;
 }
 
 body {
@@ -9904,13 +9909,13 @@ body {
   background: linear-gradient(90deg, rgb(37, 56, 63) 39%, rgb(112, 112, 112) 100%);
 }
 
-h2, .h2 {
-  font-family: Amita, sans-serif;
-  /* font-size: 5rem; */
+.navbar-nav {
+  float: right !important;
 }
 
-.card-img-top {
-  border-radius: 50%;
+.footer {
+  position: absolute;
+  z-index: -1;
 }
 
 .boxes li {
@@ -9924,17 +9929,18 @@ h2, .h2 {
   background-color: #707070;
   animation: animate 25s linear infinite;
   bottom: 0px;
+  z-index: -1;
 }
 
 .boxes li:nth-child(1) {
-  right: 15%;
+  right: 10%;
   width: 50px;
   height: 50px;
   animation-delay: 2s;
 }
 
 .boxes li:nth-child(2) {
-  right: 10%;
+  right: 15%;
   width: 50px;
   height: 50px;
   animation-delay: 1s;
@@ -9942,14 +9948,14 @@ h2, .h2 {
 }
 
 .boxes li:nth-child(3) {
-  right: 70%;
+  right: 20%;
   width: 20px;
   height: 20px;
   animation-delay: 4s;
 }
 
 .boxes li:nth-child(4) {
-  right: 40%;
+  right: 30%;
   width: 20px;
   height: 20px;
   animation-delay: 0s;
@@ -9957,28 +9963,28 @@ h2, .h2 {
 }
 
 .boxes li:nth-child(5) {
-  right: 65%;
+  right: 35%;
   width: 20px;
   height: 20px;
   animation-delay: 0s;
 }
 
 .boxes li:nth-child(6) {
-  right: 75%;
+  right: 45%;
   width: 50px;
   height: 50px;
   animation-delay: 3s;
 }
 
 .boxes li:nth-child(7) {
-  right: 25%;
+  right: 65%;
   width: 30px;
   height: 30px;
   animation-delay: 0s;
 }
 
 .boxes li:nth-child(8) {
-  right: 50%;
+  right: 75%;
   width: 25px;
   height: 25px;
   animation-delay: 4s;
@@ -9986,7 +9992,7 @@ h2, .h2 {
 }
 
 .boxes li:nth-child(9) {
-  right: 20%;
+  right: 80%;
   width: 20px;
   height: 20px;
   animation-delay: 4s;
@@ -9994,7 +10000,7 @@ h2, .h2 {
 }
 
 .boxes li:nth-child(10) {
-  right: 85%;
+  right: 90%;
   width: 80px;
   height: 80px;
   animation-delay: 0s;

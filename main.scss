@@ -12,6 +12,14 @@ $grid-breakpoints: (
 $primary: #25383F;
 $secondary: #0E0E0E;
 $warning: #707070;
+$light: white;
+
+
+#collapse
+{
+    position:absolute;
+    z-index:1;
+}
 
 @import './node_modules/bootstrap/scss/bootstrap.scss';
 
@@ -21,20 +29,20 @@ $warning: #707070;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 62,5%;
+    font-family: Amita, sans-serif;;
 }
 body{
     height: 100vh;
     width: 100vw;
     background: linear-gradient(90deg, rgba(37,56,63,1) 39%, rgba(112,112,112,1) 100%);
 }
+.navbar-nav{
+    float: right!important;
 
-h2{
-    font-family: Amita, sans-serif;
-    /* font-size: 5rem; */
 }
-.card-img-top{
-    border-radius: 50%;
+.footer{
+    position:absolute;
+    z-index: -1;
 }
 .boxes li{
     position: absolute;
@@ -47,67 +55,68 @@ h2{
     background-color: #707070;
     animation: animate 25s linear infinite;
     bottom: 0px;
+    z-index: -1;
 }
 .boxes li:nth-child(1){
-    right:15%;
+    right:10%;
     width: 50px;
     height: 50px;
     animation-delay: 2s;
 }
 .boxes li:nth-child(2){
-    right:10%;
+    right:15%;
     width: 50px;
     height: 50px;
     animation-delay: 1s;
     animation-duration: 12s;
 }
 .boxes li:nth-child(3){
-    right:70%;
+    right:20%;
     width: 20px;
     height: 20px;
     animation-delay: 4s;
 }
 .boxes li:nth-child(4){
-    right: 40%;
+    right: 30%;
     width: 20px;
     height: 20px;
     animation-delay: 0s;
     animation-duration: 18s;
 }
 .boxes li:nth-child(5){
-    right:65%;
+    right:35%;
     width: 20px;
     height: 20px;
     animation-delay: 0s;
 }
 .boxes li:nth-child(6){
-    right:75%;
+    right:45%;
     width: 50px;
     height: 50px;
     animation-delay: 3s;
 }
 .boxes li:nth-child(7){
-    right:25%;
+    right:65%;
     width: 30px;
     height: 30px;
     animation-delay: 0s;
 }
 .boxes li:nth-child(8){
-    right:50%;
+    right:75%;
     width: 25px;
     height: 25px;
     animation-delay: 4s;
     animation-duration: 45s;
 }
 .boxes li:nth-child(9){
-    right:20%;
+    right:80%;
     width: 20px;
     height: 20px;
     animation-delay: 4s;
     animation-duration: 30s;
 }
 .boxes li:nth-child(10){
-    right:85%;
+    right:90%;
     width: 80px;
     height: 80px;
     animation-delay: 0s;
