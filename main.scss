@@ -15,26 +15,20 @@ $warning: #707070;
 $light: white;
 
 
-#collapse
-{
-    position:absolute;
-    z-index:1;
-}
 
 @import './node_modules/bootstrap/scss/bootstrap.scss';
 
-*,
-*::before,
-*::after{
+:root {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Amita, sans-serif;;
+    font-family: Amita, sans-serif;
 }
 body{
     height: 100vh;
     width: 100vw;
     background: linear-gradient(90deg, rgba(37,56,63,1) 39%, rgba(112,112,112,1) 100%);
+    font-family: Amita, sans-serif;
 }
 .navbar-nav{
     float: right!important;
