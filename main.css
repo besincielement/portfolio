@@ -9916,7 +9916,7 @@ h1, .h1, h2, .h2, h4, .h4, a .btn {
 
 .footer p {
   position: absolute;
-  z-index: -2;
+  z-index: 5;
 }
 
 .boxes li {
